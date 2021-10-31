@@ -51,7 +51,7 @@ function schedule() {
     setTimeout(async function () {
         const date = new Date();
 
-        if (date.getHours() === 20 && date.getMinutes() === 50) {
+        if (date.getHours() === 21 && date.getMinutes() === 0) {
             await sendRoleCallMessage(date);
         }
 

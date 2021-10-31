@@ -72,6 +72,5 @@ export default {
         await connect();
 
         schedule();
-        await sendRoleCallMessage(new Date());
     }
 }

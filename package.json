@@ -1,0 +1,28 @@
+{
+  "name": "nnn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:js": "babel src --out-dir dist --copy-files",
+    "build:start": "npm run build:js && npm run start",
+    "build": "npm run build:js",
+    "start-dev": "nodemon --watch ./src --exec npm run build:start",
+    "start": "node dist/index.js",
+    "babel-version": "babel --version"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-syntax-class-properties": "^7.12.13",
+    "@babel/preset-env": "^7.16.0",
+    "babel-plugin-transform-es2015-modules-simple-commonjs": "^0.3.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "discord.js": "^13.3.0"
+  }
+}

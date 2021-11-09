@@ -20,7 +20,7 @@ async function connect() {
 }
 
 async function sendRoleCallMessage(date) {
-    const day = date.getDay();
+    const day = date.getDate();
     const index = random(config.messages.role_call.length);
     const selected = config.messages.role_call[index];
 
